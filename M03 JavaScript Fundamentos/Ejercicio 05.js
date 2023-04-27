@@ -1,6 +1,8 @@
 /*⚠️ NO MODIFIQUES EL NOMBRE DE LAS DECLARACIONES ⚠️*/
 /*5️⃣ EJERCICIO 05 5️⃣*/
 
+const { string } = require("yargs");
+
 function esPositivo(num) {
    // La función recibe un entero. Devuelve como resultado un string que indica si el número
    // es positivo o negativo.
@@ -10,9 +12,9 @@ function esPositivo(num) {
    // Tu código:
    if(num === 0){
       return false
+   }else if(num > 0){
+      return "Es positivo"
    }else if(num < 0){
-      "Es positivo"
-   }else{
       return "Es negativo"
    }
 }
@@ -74,7 +76,7 @@ function esVocal(letra) {
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
    if(letra === "a" || letra ==="e" || letra === "i" || letra === "o" || letra === "u"){
-      return "es vocal"
+      return "Es vocal"
    }else{
       return "Dato incorrecto"
    }
