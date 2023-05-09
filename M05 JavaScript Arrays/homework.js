@@ -207,7 +207,7 @@ function mayorACien(array) {
          newArrays.push(array[i]);
      }
    }
-   return newArrays;
+   return newArrays; 
 }
 
 /* ----------------------------------------------------------------------------------
